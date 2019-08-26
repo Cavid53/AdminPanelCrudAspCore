@@ -1,0 +1,35 @@
+﻿@model  Service
+@{
+    ViewData["Title"] = "Update";
+}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <form method="post">
+                    <div class="form-group">
+                        <label asp-for="Title">Title:</label>
+                        <input asp-for="Title" class="form-control" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Description">Description:</label>
+                        <input asp-for="Description" class="form-control" />
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="IconField">Icon:</label>
+                        <input asp-for="IconField" class="form-control" />
+                        <span asp-validation-for="IconField" class="text-danger"></span>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Update" />
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <a asp-action="Index"><i class="fas fa-arrow-left"></i>Go back</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
