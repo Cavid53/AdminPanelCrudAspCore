@@ -1,0 +1,21 @@
+﻿@model Slider
+@{
+    ViewData["Title"] = "Slider";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h3>@Model.Title</h3>
+            <p>@Model.Description</p>
+            <img src="~/img/@Model.Image" alt="Alternate Text" width="200px" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <a asp-action="Index"> <i class="fas fa-arrow-left"></i>Go back</a>
+        </div>
+    </div>
+
+</div>
+
